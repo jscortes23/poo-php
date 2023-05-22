@@ -1,0 +1,1 @@
+{"version":1,"defects":{"PostBenefitsTest::test_add_benefit_to_page":5,"PostBenefitsTest::test_add_benefit_to_post":8},"times":{"PostBenefitsTest::test_add_benefit_to_page":0.027,"PostBenefitsTest::test_add_benefit_to_post":0.048}}

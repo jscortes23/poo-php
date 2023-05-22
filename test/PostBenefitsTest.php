@@ -1,20 +1,20 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-use App\Benefits;
-use App\City;
+use App\Benefit;
+use App\Post;
 
 class PostBenefitsTest extends TestCase
 {
-    public function test_add_benefit_to_page()
+    public function test_add_benefit_to_post()
     {
+        $post = new Post();
         $benefit = new Benefit();
-        $city = new City();
 
-        $benefit->addCity($city);
+        $post->addBenefits($benefit);
 
-        $this->assertEquals(1, $benefit->countBenefits());
-        $this->assertInstanceOf(City::class, $benefit->getBenefits()[0]);
+        $this->assertEquals(1, $post->countBenefits());
+        $this->assertInstanceOf(Benefit::class, $post->getBenefits()[0]);
 
     }
 }
