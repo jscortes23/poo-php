@@ -4,7 +4,7 @@ namespace App;
 class Post
 {
     protected $benefits = [];
-    public function addBenefits(Benefit $benefit)
+    public function addBenefits($benefit)
     {
         $this->benefits[] = $benefit;
     }
